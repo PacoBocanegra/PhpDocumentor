@@ -1,0 +1,6 @@
+<?php
+require_once('Producto-com.php');
+$server = new SoapServer("http://localhost/practicaUD6/conWSDL/Producto.wsdl"); 
+$server->setClass('Producto');
+$server->handle();
+?>
